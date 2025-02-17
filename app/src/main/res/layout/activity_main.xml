@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sword_gray"
+    android:theme="@style/Theme.Material3.DynamicColors.Dark.NoActionBar"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/score_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/partial_black"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="4dp"
+        android:text="@string/score"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/partial_black"
+        android:paddingVertical="16dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="16dp"
+        android:text="@string/zero"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/score_label"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:id="@+id/cards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- First row -->
+        <ImageView
+            android:id="@+id/card_00"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_30"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <!-- Second row -->
+        <ImageView
+            android:id="@+id/card_01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <!-- Third row -->
+        <ImageView
+            android:id="@+id/card_02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <!-- Fourth row -->
+        <ImageView
+            android:id="@+id/card_03"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_23"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+
+        <ImageView
+            android:id="@+id/card_33"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:contentDescription="@string/card"
+            android:hapticFeedbackEnabled="true"
+            android:padding="8dp"
+            android:src="@drawable/card_background" />
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

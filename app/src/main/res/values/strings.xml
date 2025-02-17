@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Matching Game</string>
+    <string name="card">Card</string>
+    <string name="score">Score:</string>
+    <string name="zero">0</string>
+    <string name="game_over">Game Over! Final Score: </string>
+</resources>

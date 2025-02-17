@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grass_green">#FF58A531</color>
+    <color name="light_green">#FF5FB235</color>
+    <color name="sky_blue">#FF69AEEA</color>
+    <color name="cloud_white">#FFEEEEEE</color>
+    <color name="cloud_gray">#FFDDDDDD</color>
+    <color name="stone_gray">#FF808080</color>
+    <color name="sword_gray">#FF404040</color>
+    <color name="morning_green">#FF34611D</color>
+    <color name="morning_blue">#FF1969AF</color>
+    <color name="partial_black">#55000000</color>
+    <color name="partial_white">#55DDDDDD</color>
+</resources>
